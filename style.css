@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+   
+}
+.container{
+    margin: 0;
+    background-color: #f7f2f2;
+}
+
+.header{
+    background-color: #f7f2f2;
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    padding-bottom: 1%;
+    width: 100%;
+}
+.headercontent{
+list-style: none;
+display: flex;
+justify-content: flex-end;
+width: 100%;
+}
+/* HEADER */
+.headercontent li{
+    margin-left: 2.5%;
+   
+}
+
+.headercontent li a {
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+ font-weight: 700;
+}
+
+.headercontent li a:hover {
+    color: rgb(184, 81, 12);
+   }
+
+.title a{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.section{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landscapeimg{
+    width: 100%;
+}
+
+.welcomemessage{
+   text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 43%;
+    width: 70%;
+    z-index:2;
+    animation-name: welcomemsg;
+    animation-duration: 2.5s;
+}
+
+@keyframes welcomemsg{
+    0% {
+        transform: translateX(-60rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
+
+.welcomemessage h1{
+    font-size: 300%;
+    font-weight: 900;
+}
+
+.footer{
+    background-color: #b73d18;
+    border:1px #b73d18 solid;
+    height: 100px;
+    display: flex;
+    padding:3% ;
+}
+
+.icon{
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+}
+.icon-space{
+    margin-right: 100%;
+}
+
+.icon-space a{
+    color: #000;
+}
+.icon-space a:hover{
+    color: #471708;
+}
+/* --------------------PAGE PROJETS-------------------- */
+.container-color02{
+    margin: 0;
+    background-color: #0e3158;
+  
+}
+
+.header02{
+    background-color: #0e3158;
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    padding-bottom: 1%;
+    width: 100%
+}
+.headercontent02{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    }
+    /* HEADER */
+    .headercontent02 li{
+        margin-left: 2.5%;
+       
+    }
+    
+    .headercontent02 li a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-weight: 700;
+    }
+    
+    .headercontent02 li a:hover {
+        color: rgb(211, 211, 211);
+       }
+.projecttitle a{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    }
+
+.projectmessage{
+    text-align: center;
+    color: transparent;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 43%;
+    width: 70%;
+    z-index:2;
+    animation-name: projectsmsg;
+    animation-duration: 3s;
+    animation-fill-mode:backwards;
+}
+
+@keyframes projectsmsg{
+    0% {
+        opacity: 0;
+        color: rgb(255, 255, 255);
+    }
+   
+    40%{
+        
+        opacity: 1;
+        color: rgb(255, 255, 255);
+        
+    }
+    100%{
+        opacity: 0;
+        color: rgb(255, 255, 255);
+        display: none;
+        
+
+    }
+    
+}
+.projectmessage h1{
+    font-size: 300%;
+    font-weight: 900;
+}
+.footer02{
+    background-color: #2e5872;
+    height: 100px;
+    display: flex;
+    padding:3% ;
+}
+
+
+.icon-space02{
+    margin-right: 100%;
+}
+.icon-space02 a{
+    color: #0a223d;
+}
+.icon-space02 a:hover{
+    color: #0f325a;
+}
+
+.card{
+    width: 40%;
+}
+
