@@ -10,7 +10,7 @@ body{
     background: linear-gradient(0deg, rgba(183,61,24,1) 89%, rgba(247,242,242,1) 89%);
 }
 .backimg{
-    background: url(images/paysage.png) 1% no-repeat ;
+    background: url(images/paysage2.png) 1% no-repeat ;
     background-size: 101%;
     height: 100%;
 }
@@ -74,7 +74,7 @@ width: 100%;
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 43%;
+    top: 28%;
     width: 70%;
     z-index:2;
     animation-name: welcomemsg;
@@ -106,7 +106,7 @@ width: 100%;
 .icon{
     display: flex;
     margin: auto;
-    font-size: 30px;
+    font-size: 35px;
 }
 .icon-space{
     margin-right: 100%;
@@ -127,6 +127,7 @@ width: 100%;
     text-align: justify;
     display: flex;
     margin: auto;
+    justify-content: center;
 }
 
 .text-aboutme{
@@ -147,7 +148,7 @@ width: 100%;
 
 .me{
     position: absolute;
-    top: 55%;
+    top: 40%;
     left: 10%;
     margin-top: 8%;
     animation-name: bounce;
@@ -212,17 +213,17 @@ width: 100%;
 
 .card-container_select{
     opacity: 0.9;
-    animation-name: card;
-    animation-duration: 3s;
 }
 
-@keyframes card {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: .7s;
 }
 
 .card-container_select:hover{
@@ -242,3 +243,66 @@ width: 100%;
 .card img{
     height: 180px;
 }
+
+.card-body{
+    background-color: black;
+    color: #fff;
+    opacity: 0.9;
+}
+.soon-msg{
+    display: none;
+}
+@media (max-width: 753px){
+    body{
+        margin: auto;
+        display: block;
+        justify-content: center;
+        
+    }
+   
+    .soon {
+       animation-name: soon;
+       animation-iteration-count: infinite;
+       animation-duration: 2S;
+    }
+
+    .soon-msg{
+        display: flex;
+        color: rgb(165, 60, 0);
+        position: absolute;
+        top: 0;
+        left: 15%;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    .soon-msg p{
+        font-size: 40px;
+        font-weight: bold;
+        
+    }
+
+    /* section:nth-child(1){
+        display: none;
+    } */
+    section:nth-child(2){
+        display: none;
+    }
+
+    section:nth-child(3){
+        display: none;
+    }
+
+
+    @keyframes soon {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    }
