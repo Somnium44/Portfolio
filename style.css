@@ -4,10 +4,10 @@ body{
     font-family: 'Lato', sans-serif;
     
 }
-.container{
+.container1{
     margin: 0;
     background: rgb(183,61,24);
-    background: linear-gradient(0deg, rgba(183,61,24,1) 89%, rgba(247,242,242,1) 89%);
+background: linear-gradient(0deg, rgba(183,61,24,1) 76%, rgba(247,242,242,1) 77%);
 }
 .backimg{
     background: url(images/paysage2.png) 1% no-repeat ;
@@ -60,6 +60,27 @@ width: 100%;
     text-align: center;
 }
 
+.aze{
+    display:block;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+}
+
+.profilepicture{
+    width: 200px;
+    height:200px ;
+}
+
+.me{
+    margin-top: 4%;
+    animation-name: bounce;
+    animation-duration: 2.5s;
+}
+
 .landscapeimg{
     width: 100%;
 }
@@ -68,15 +89,6 @@ width: 100%;
    text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Lato', sans-serif;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 28%;
-    width: 70%;
-    z-index:2;
     animation-name: welcomemsg;
     animation-duration: 2.5s;
 }
@@ -91,7 +103,7 @@ width: 100%;
 }
 
 .welcomemessage h1{
-    font-size: 300%;
+    font-size: 290%;
     font-weight: 900;
 }
 
@@ -108,12 +120,10 @@ width: 100%;
     margin: auto;
     font-size: 35px;
 }
-.icon-space{
-    margin-right: 100%;
-}
 
 .icon-space a{
     color: #000;
+    margin: 30px;
 }
 .icon-space a:hover{
     color: #471708;
@@ -142,19 +152,7 @@ width: 100%;
     margin-bottom: 5%;
     
 }
-.profilepicture{
-    width: 20%;
-}
 
-.me{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    margin-top: 8%;
-    animation-name: bounce;
-    animation-duration: 2.5s;
-    
-}
 
 @keyframes bounce{
     0%{
@@ -198,6 +196,7 @@ width: 100%;
     text-align: center;
     align-items: center;
     background-color: #b73d18;
+
 }
 
 #projects h2{
@@ -205,14 +204,15 @@ width: 100%;
 }
 .projects-items{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 350px);
     grid-column-gap: 10px;
     grid-row-gap: 4.4em;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .card-container_select{
     opacity: 0.9;
+    margin: auto;
 }
 
 .reveal{
@@ -253,13 +253,13 @@ width: 100%;
     display: none;
 }
 @media (max-width: 753px){
-    body{
+    /* body{
         margin: auto;
         display: block;
         justify-content: center;
         
     }
-   
+    */
     .soon {
        animation-name: soon;
        animation-iteration-count: infinite;
@@ -287,13 +287,13 @@ width: 100%;
     /* section:nth-child(1){
         display: none;
     } */
-    section:nth-child(2){
+    /* section:nth-child(2){
         display: none;
     }
 
     section:nth-child(3){
         display: none;
-    }
+    } */
 
 
     @keyframes soon {
