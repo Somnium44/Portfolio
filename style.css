@@ -285,6 +285,11 @@ width: 100%;
             margin-top: 8%;
         }
 
+        .profilepicture{
+            width: 140px;
+            height:140px ;
+        }
+
         #projects{
             
         }
