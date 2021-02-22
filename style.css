@@ -149,8 +149,7 @@ width: 100%;
 
 .text-aboutme p{
     font-size: 18px;
-    margin-bottom: 5%;
-    
+    margin-bottom: 7%;
 }
 
 
@@ -162,6 +161,9 @@ width: 100%;
     100%{
         transform: scale(1);
     }
+}
+.btncv{
+    text-align: center;
 }
 
 .cv{
@@ -193,6 +195,7 @@ width: 100%;
 #projects{
     color: black;
     padding: 5%;
+    padding-top: 6%;
     text-align: center;
     align-items: center;
     background-color: #b73d18;
@@ -229,6 +232,17 @@ width: 100%;
 .card-container_select:hover{
     opacity: 1;
     margin-top:-5%;
+    animation-name: height;
+    animation-duration: .4s;
+}
+
+@keyframes height{
+    0%{
+        margin-top:0%;
+    }
+    100%{
+        margin-top:-5%;
+    }
 }
 
 .card-container_select a{
@@ -252,57 +266,48 @@ width: 100%;
 .soon-msg{
     display: none;
 }
-@media (max-width: 753px){
-    /* body{
-        margin: auto;
-        display: block;
-        justify-content: center;
-        
+@media (max-width: 1000px){
+    #aboutme{
+        width: 90%;
+        padding-top: 0;
     }
-    */
-    .soon {
-       animation-name: soon;
-       animation-iteration-count: infinite;
-       animation-duration: 2S;
+  
     }
 
-    .soon-msg{
-        display: flex;
-        color: rgb(165, 60, 0);
-        position: absolute;
-        top: 0;
-        left: 15%;
-        right: 0;
-        bottom: 0;
-        width: 300px;
-        height: 300px;
-        margin: auto;
-    }
-    .soon-msg p{
-        font-size: 40px;
-        font-weight: bold;
-        
-    }
-
-    /* section:nth-child(1){
-        display: none;
-    } */
-    /* section:nth-child(2){
-        display: none;
-    }
-
-    section:nth-child(3){
-        display: none;
-    } */
-
-
-    @keyframes soon {
-        0%{
-            opacity: 0;
+    @media (max-width: 600px){
+        #aboutme{
+            width: 100%;
+            padding-top: 0;
+            margin-top: -20%;
         }
-        100%{
-            opacity: 0;
+        .me{
+            margin-top: 8%;
         }
-    }
 
-    }
+        #projects{
+            
+        }
+
+        .card-container_select:hover{
+            opacity: 1;
+            margin-top:0%;
+            animation-name: height;
+            animation-duration: .4s;
+        }
+        
+        @keyframes height{
+            0%{
+                margin-top:0%;
+            }
+            100%{
+                margin-top:0%;
+            }
+        }
+
+        .text-aboutme p{
+            font-size: 18px;
+            margin-bottom: 9%;
+        }
+      
+        }
+    
