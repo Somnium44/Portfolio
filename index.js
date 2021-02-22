@@ -20,3 +20,5 @@ const handleIntersect = function (entries, observer) {
   document.querySelectorAll('.reveal').forEach(function (r) {
        observer.observe(r)
   })
+
+
